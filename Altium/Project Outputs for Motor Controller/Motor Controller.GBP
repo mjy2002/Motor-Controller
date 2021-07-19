@@ -6,15 +6,15 @@ G04 Layer_Color=128*
 %MOIN*%
 G70*
 G04*
-G04 #@! TF.SameCoordinates,91061D10-DFF7-4326-B378-EF9DD97FDABD*
+G04 #@! TF.SameCoordinates,9F226A22-D70E-441E-867E-09538FDFB880*
 G04*
 G04*
 G04 #@! TF.FilePolarity,Positive*
 G04*
 G01*
 G75*
-G04:AMPARAMS|DCode=19|XSize=21.26mil|YSize=22.84mil|CornerRadius=5.32mil|HoleSize=0mil|Usage=FLASHONLY|Rotation=270.000|XOffset=0mil|YOffset=0mil|HoleType=Round|Shape=RoundedRectangle|*
-%AMROUNDEDRECTD19*
+G04:AMPARAMS|DCode=21|XSize=21.26mil|YSize=22.84mil|CornerRadius=5.32mil|HoleSize=0mil|Usage=FLASHONLY|Rotation=270.000|XOffset=0mil|YOffset=0mil|HoleType=Round|Shape=RoundedRectangle|*
+%AMROUNDEDRECTD21*
 21,1,0.02126,0.01221,0,0,270.0*
 21,1,0.01063,0.02284,0,0,270.0*
 1,1,0.01063,-0.00610,-0.00532*
@@ -22,7 +22,7 @@ G04:AMPARAMS|DCode=19|XSize=21.26mil|YSize=22.84mil|CornerRadius=5.32mil|HoleSiz
 1,1,0.01063,0.00610,0.00532*
 1,1,0.01063,0.00610,-0.00532*
 %
-%ADD19ROUNDEDRECTD19*%
+%ADD21ROUNDEDRECTD21*%
 G04:AMPARAMS|DCode=40|XSize=157.48mil|YSize=118.11mil|CornerRadius=29.53mil|HoleSize=0mil|Usage=FLASHONLY|Rotation=244.000|XOffset=0mil|YOffset=0mil|HoleType=Round|Shape=RoundedRectangle|*
 %AMROUNDEDRECTD40*
 21,1,0.15748,0.05906,0,0,244.0*
@@ -73,8 +73,8 @@ G04:AMPARAMS|DCode=44|XSize=157.48mil|YSize=118.11mil|CornerRadius=29.53mil|Hole
 1,1,0.05906,0.04811,-0.03129*
 %
 %ADD44ROUNDEDRECTD44*%
-%ADD94O,0.05512X0.01772*%
-D19*
+%ADD96O,0.05512X0.01772*%
+D21*
 X-14965Y0D02*
 D03*
 X-18035D02*
@@ -94,7 +94,7 @@ D03*
 D44*
 X-74600Y-36385D02*
 D03*
-D94*
+D96*
 X11614Y7677D02*
 D03*
 Y5118D02*

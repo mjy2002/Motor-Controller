@@ -1,5 +1,0 @@
-Change Component Footprint: Designator=J? Old Footprint=FP-M50-3600542-MFG New Footprint=FP-M50-3600542-MFG
-Change Component Designator: OldDesignator=J? NewDesignator=J1
-Change Net Name : Old Net Name=NetJ?_2 New Net Name=NetJ1_2
-Change Net Name : Old Net Name=NetJ?_4 New Net Name=NetJ1_4
-Added Room: Name=Motor Controller

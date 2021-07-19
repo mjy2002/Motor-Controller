@@ -2,28 +2,120 @@
 FileName = Motor Controller.GBR
 AutoAperture = True
 *************************************************************
-Generating : Board Shape
-      File : Motor Controller.GM6
+Generating : Top Layer
+      File : Motor Controller.GTL
 
-    Adding Layer      : Board Shape
+    Adding Layer      : Top Layer
 
-
-Used DCodes :
-    D11
-    D14
-*************************************************************
-
-*************************************************************
-Generating : Bottom Overlay
-      File : Motor Controller.GBO
-
-    Adding Layer      : Bottom Overlay
+    Adding Layer      : Multi-Layer
 
 
 Used DCodes :
-    D10
-    D12
     D13
+    D14
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D28
+    D29
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D81
+    D82
+    D83
+    D84
+    D85
+    D86
+    D87
+    D88
+    D89
+    D90
+    D91
+    D92
+    D93
+    D94
+*************************************************************
+
+*************************************************************
+Generating : Mid-Layer 1
+      File : Motor Controller.G1
+
+    Adding Layer      : Mid-Layer 1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D89
+    D90
+    D91
+    D92
+    D93
+    D94
+*************************************************************
+
+*************************************************************
+Generating : Mid-Layer 2
+      File : Motor Controller.G2
+
+    Adding Layer      : Mid-Layer 2
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D89
+    D91
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : Motor Controller.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D14
+    D21
+    D40
+    D41
+    D42
+    D43
+    D44
+    D86
+    D87
+    D88
+    D89
+    D90
+    D91
+    D92
+    D93
+    D94
+    D95
     D96
 *************************************************************
 
@@ -39,91 +131,54 @@ Generating : Bottom Paste
 
 
 Used DCodes :
-    D19
+    D21
     D40
     D41
     D42
     D43
     D44
-    D94
+    D96
 *************************************************************
 
 *************************************************************
-Generating : Bottom Solder
-      File : Motor Controller.GBS
+Generating : Bottom Overlay
+      File : Motor Controller.GBO
 
-    Adding Layer      : Bottom Solder
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
+    Adding Layer      : Bottom Overlay
 
 
 Used DCodes :
-    D49
-    D69
-    D70
-    D71
-    D72
-    D73
-    D76
-    D77
-    D78
-    D79
-    D80
-    D95
+    D10
+    D12
+    D13
+    D98
 *************************************************************
 
 *************************************************************
-Generating : Top Solder
-      File : Motor Controller.GTS
+Generating : Board Shape
+      File : Motor Controller.GM6
 
-    Adding Layer      : Top Solder
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
+    Adding Layer      : Board Shape
 
 
 Used DCodes :
-    D21
-    D32
-    D33
-    D34
-    D47
-    D48
-    D49
-    D50
-    D51
-    D52
-    D53
-    D54
-    D55
-    D56
-    D57
-    D58
-    D59
-    D60
-    D61
-    D62
-    D63
-    D64
-    D65
-    D66
-    D67
-    D68
-    D69
-    D70
-    D71
-    D72
-    D73
-    D74
-    D75
-    D76
-    D77
-    D78
-    D79
-    D80
+    D11
+    D14
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : Motor Controller.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
 *************************************************************
 
 *************************************************************
@@ -173,88 +228,10 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Top Overlay
-      File : Motor Controller.GTO
+Generating : Top Solder
+      File : Motor Controller.GTS
 
-    Adding Layer      : Top Overlay
-
-
-Used DCodes :
-    D10
-    D11
-    D12
-    D13
-    D14
-*************************************************************
-
-*************************************************************
-Generating : Bottom Layer
-      File : Motor Controller.GBL
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D13
-    D14
-    D19
-    D40
-    D41
-    D42
-    D43
-    D44
-    D76
-    D77
-    D86
-    D87
-    D88
-    D89
-    D90
-    D91
-    D92
-    D93
-    D94
-*************************************************************
-
-*************************************************************
-Generating : Mid-Layer 2
-      File : Motor Controller.G2
-
-    Adding Layer      : Mid-Layer 2
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D13
-    D14
-    D87
-    D89
-*************************************************************
-
-*************************************************************
-Generating : Mid-Layer 1
-      File : Motor Controller.G1
-
-    Adding Layer      : Mid-Layer 1
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D87
-    D88
-    D89
-    D90
-    D91
-    D92
-*************************************************************
-
-*************************************************************
-Generating : Top Layer
-      File : Motor Controller.GTL
+    Adding Layer      : Top Solder
 
     Adding Layer      : Top Layer
 
@@ -262,48 +239,70 @@ Generating : Top Layer
 
 
 Used DCodes :
-    D13
-    D14
-    D17
-    D18
-    D19
-    D20
-    D21
-    D22
     D23
-    D26
-    D29
     D32
     D33
     D34
-    D35
-    D36
-    D37
-    D38
-    D39
-    D40
-    D41
-    D42
-    D43
-    D44
-    D45
-    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
+    D57
     D58
     D59
+    D60
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+    D73
+    D74
+    D75
     D76
     D77
-    D81
-    D82
-    D83
-    D84
-    D85
-    D86
-    D87
-    D88
-    D89
-    D90
-    D91
-    D92
+    D78
+    D79
+    D80
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : Motor Controller.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D51
+    D69
+    D70
+    D71
+    D72
+    D73
+    D76
+    D77
+    D78
+    D79
+    D80
+    D97
 *************************************************************
 
 *************************************************************
@@ -316,7 +315,7 @@ Generating : Drill Drawing
 
 
 Used DCodes :
-    D97
-    D98
+    D99
+    D100
 *************************************************************
 
