@@ -1,0 +1,204 @@
+Change Component Footprint: Designator=C9 Old Footprint=CAPC2013X140X50LL20T25 New Footprint=CAPC2013X140X50LL20T25
+Change Component Footprint: Designator=C10 Old Footprint=CAPC2013X140X50LL20T25 New Footprint=CAPC2013X140X50LL20T25
+Change Component Footprint: Designator=C11 Old Footprint=CAPC2013X140X50LL20T25 New Footprint=CAPC2013X140X50LL20T25
+Change Component Footprint: Designator=C12 Old Footprint=CAPC2013X140X50LL20T25 New Footprint=CAPC2013X140X50LL20T25
+Change Component Footprint: Designator=C13 Old Footprint=CAPC2013X140X50LL20T25 New Footprint=CAPC2013X140X50LL20T25
+Change Component Footprint: Designator=C14 Old Footprint=CAPC2013X140X50LL20T25 New Footprint=CAPC2013X140X50LL20T25
+Change Component Footprint: Designator=C15 Old Footprint=CAPC2013X140X50LL20T25 New Footprint=CAPC2013X140X50LL20T25
+Change Component Footprint: Designator=C16 Old Footprint=CAPC2013X140X50LL20T25 New Footprint=CAPC2013X140X50LL20T25
+Change Component Footprint: Designator=C17 Old Footprint=CAPC2013X140X50LL20T25 New Footprint=CAPC2013X140X50LL20T25
+Change Component Footprint: Designator=C18 Old Footprint=CAPC2013X140X50LL20T25 New Footprint=CAPC2013X140X50LL20T25
+Change Component Footprint: Designator=C19 Old Footprint=CAPC2013X140X50LL20T25 New Footprint=CAPC2013X140X50LL20T25
+Change Component Footprint: Designator=C20 Old Footprint=CAPC2013X140X50LL20T25 New Footprint=CAPC2013X140X50LL20T25
+Change Component Footprint: Designator=C21 Old Footprint=CAPC2013X140X50LL20T25 New Footprint=CAPC2013X140X50LL20T25
+Change Component Footprint: Designator=C22 Old Footprint=CAPC2013X140X50LL20T25 New Footprint=CAPC2013X140X50LL20T25
+Change Component Footprint: Designator=C23 Old Footprint=CAPC2013X140X50LL20T25 New Footprint=CAPC2013X140X50LL20T25
+Change Component Footprint: Designator=C24 Old Footprint=CAPC2013X140X50LL20T25 New Footprint=CAPC2013X140X50LL20T25
+Change Component Footprint: Designator=C25 Old Footprint=CAPC2013X140X50LL20T25 New Footprint=CAPC2013X140X50LL20T25
+Change Component Footprint: Designator=C26 Old Footprint=CAPC2013X140X50LL20T25 New Footprint=CAPC2013X140X50LL20T25
+Change Component Footprint: Designator=C27 Old Footprint=CAPC2013X140X50LL20T25 New Footprint=CAPC2013X140X50LL20T25
+Change Component Footprint: Designator=C28 Old Footprint=CAPC2013X140X50LL20T25 New Footprint=CAPC2013X140X50LL20T25
+Change Component Designator: OldDesignator=C8 NewDesignator=C33
+Change Component Designator: OldDesignator=C9 NewDesignator=C13
+Change Component Designator: OldDesignator=C10 NewDesignator=C14
+Change Component Designator: OldDesignator=C11 NewDesignator=C15
+Change Component Designator: OldDesignator=C12 NewDesignator=C16
+Change Component Designator: OldDesignator=C13 NewDesignator=C17
+Change Component Designator: OldDesignator=C14 NewDesignator=C18
+Change Component Designator: OldDesignator=C15 NewDesignator=C19
+Change Component Designator: OldDesignator=C16 NewDesignator=C20
+Change Component Designator: OldDesignator=C17 NewDesignator=C21
+Change Component Designator: OldDesignator=C18 NewDesignator=C22
+Change Component Designator: OldDesignator=C19 NewDesignator=C23
+Change Component Designator: OldDesignator=C20 NewDesignator=C24
+Change Component Designator: OldDesignator=C21 NewDesignator=C25
+Change Component Designator: OldDesignator=C22 NewDesignator=C26
+Change Component Designator: OldDesignator=C23 NewDesignator=C27
+Change Component Designator: OldDesignator=C24 NewDesignator=C28
+Change Component Designator: OldDesignator=C25 NewDesignator=C29
+Change Component Designator: OldDesignator=C26 NewDesignator=C30
+Change Component Designator: OldDesignator=C27 NewDesignator=C31
+Change Component Designator: OldDesignator=C28 NewDesignator=C32
+Change Component Designator: OldDesignator=C29 NewDesignator=C35
+Change Component Designator: OldDesignator=C30 NewDesignator=C36
+Change Component Designator: OldDesignator=C31 NewDesignator=C37
+Change Component Designator: OldDesignator=C32 NewDesignator=C38
+Change Component Designator: OldDesignator=R4 NewDesignator=R5
+Change Component Designator: OldDesignator=R5 NewDesignator=R6
+Change Component Designator: OldDesignator=R6 NewDesignator=R7
+Added Component: Designator=C8(0402CAP)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7869-1-ND"; VariantName = "[No Variations]"
+Added Component: Designator=C9(0402CAP)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7869-1-ND"; VariantName = "[No Variations]"
+Added Component: Designator=C10(CAPC2013X140X50LL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0805ZC106KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2116198"; VariantName = "[No Variations]"
+Added Component: Designator=C11(0603CAP)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "478-12227-1-ND"; VariantName = "[No Variations]"
+Added Component: Designator=C12(0402CAP)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "478-7869-1-ND"; VariantName = "[No Variations]"
+Added Component: Designator=C34(FP-C3225-250-0_4-IPC_A)
+Add component (AddParameter): Name = "Capacitance"; Value = "22uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "1210"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "3225"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "1210"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Construction"; Value = "Flat"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "2.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "2.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "3.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "No SVHC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistor Type"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "445-3945-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Thickness"; Value = "0.11inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (DC)"; Value = "16V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Weight"; Value = "0.000564oz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "0.098inch"; VariantName = "[No Variations]"
+Added Component: Designator=R4(RESC1005X40X25LL05T05)
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "1005"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case\/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.panasonic.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C86.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "04/2015"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.35 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "1 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155 degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55 degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "2-Pin Surface Mount Device, Body 1 x 0.5 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Cut Tape"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "ERJ-2RKF4701X"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "100 mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "4.7 KOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHSCompliant"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P4.70KLCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "50 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "0.5 mm"; VariantName = "[No Variations]"
+Added Component: Designator=R8(RESC1005X40X25LL05T05)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "ERJ2RKF2701X"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Added Component: Designator=R9(RESC1005X40X25LL05T05)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "ERJ2RKF2701X"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Added Component: Designator=U3(SOT65P210X100-3N)
+Added Pin To Net: NetName=PWRGND Pin=C1-1
+Added Pin To Net: NetName=PWRGND Pin=C2-1
+Added Pin To Net: NetName=PWRGND Pin=C3-1
+Added Pin To Net: NetName=PWRGND Pin=C4-1
+Added Pin To Net: NetName=PWRGND Pin=C5-2
+Added Pin To Net: NetName=PWRGND Pin=C6-2
+Added Pin To Net: NetName=PWRGND Pin=C7-2
+Added Pin To Net: NetName=PWRGND Pin=C8-1
+Added Pin To Net: NetName=VS Pin=C8-2
+Added Pin To Net: NetName=PWRGND Pin=C9-1
+Added Pin To Net: NetName=VS Pin=C9-2
+Added Pin To Net: NetName=PWRGND Pin=C10-1
+Added Pin To Net: NetName=VS Pin=C10-2
+Added Pin To Net: NetName=PWRGND Pin=C11-1
+Added Pin To Net: NetName=PWRGND Pin=C12-1
+Added Pin To Net: NetName=FB_BK Pin=C34-1
+Added Pin To Net: NetName=PWRGND Pin=C34-2
+Added Pin To Net: NetName=PWRGND Pin=C36-2
+Added Pin To Net: NetName=PWRGND Pin=C37-2
+Added Pin To Net: NetName=PWRGND Pin=C38-2
+Added Pin To Net: NetName=PWRGND Pin=D1-1
+Added Pin To Net: NetName=FB_BK Pin=D2-1
+Added Pin To Net: NetName=PWRGND Pin=J1-3
+Added Pin To Net: NetName=PWRGND Pin=J2-5
+Added Pin To Net: NetName=FB_BK Pin=R4-1
+Added Pin To Net: NetName=nFAULT Pin=R4-2
+Added Pin To Net: NetName=nSLEEP Pin=R8-1
+Added Pin To Net: NetName=VS Pin=R8-2
+Added Pin To Net: NetName=PWRGND Pin=R9-1
+Added Pin To Net: NetName=nSLEEP Pin=R9-2
+Added Pin To Net: NetName=PWRGND Pin=SW1-3
+Added Pin To Net: NetName=PWRGND Pin=U1-5
+Added Pin To Net: NetName=PWRGND Pin=U1-18
+Added Pin To Net: NetName=PWRGND Pin=U1-35
+Added Pin To Net: NetName=PWRGND Pin=U1-42
+Added Pin To Net: NetName=PWRGND Pin=U1-49
+Added Pin To Net: NetName=PWRGND Pin=U2-2
+Added Pin To Net: NetName=PWRGND Pin=U2-4
+Added Pin To Net: NetName=PWRGND Pin=U2-26
+Added Pin To Net: NetName=PWRGND Pin=U2-41
+Added Pin To Net: NetName=PWRGND Pin=U2-42
+Added Pin To Net: NetName=nSLEEP Pin=U3-1
+Added Pin To Net: NetName=PWRGND Pin=U3-2
+Change Net Name : Old Net Name=NetR4_1 New Net Name=NetR5_1
+Change Net Name : Old Net Name=NetR5_1 New Net Name=NetR6_1
+Change Net Name : Old Net Name=NetR6_1 New Net Name=NetR7_1
+Change Net Name : Old Net Name=PWRGND New Net Name=GND
+Added Pin To Net: NetName=DRV_VREF Pin=C11-2
+Added Pin To Net: NetName=DRV_VREF Pin=C12-2
+Added Pin To Net: NetName=DRV_VREF Pin=U2-25
+Added Pin To Net: NetName=DRV_VREF Pin=U2-37
+Added Net: Name=DRV_VREF
+Added Member To Class: ClassName=Motor Controller Member=Component C8 100nF
+Added Member To Class: ClassName=Motor Controller Member=Component C9 100nF
+Added Member To Class: ClassName=Motor Controller Member=Component C10 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C33 1 uF
+Added Member To Class: ClassName=Motor Controller Member=Component C34 22uF
+Added Member To Class: ClassName=Motor Controller Member=Component C35 47nF
+Added Member To Class: ClassName=Motor Controller Member=Component C36 22 pF
+Added Member To Class: ClassName=Motor Controller Member=Component C37 22 pF
+Added Member To Class: ClassName=Motor Controller Member=Component C38 22 pF
+Added Member To Class: ClassName=Motor Controller Member=Component R7 330
+Added Member To Class: ClassName=Motor Controller Member=Component R8 2.7k
+Added Member To Class: ClassName=Motor Controller Member=Component R9 2.7k
+Added Member To Class: ClassName=Motor Controller Member=Component U3 LM4040D33FTA
+Added Room: Name=Motor Controller

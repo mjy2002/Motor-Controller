@@ -1,0 +1,9 @@
+Change Managed Component Library Link : Designator=SW1 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=EF062462-E4D3-41F0-9A45-5BF70B79FAEB New ItemGUID= Old RevisionGUID=D4BBAA39-9406-4E15-BBCA-6EEEF30D7287 New RevisionGUID=
+Change Managed Component Library Link : Designator=U1 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=D7D01921-05CD-48C2-9664-1E0C822396F4 New ItemGUID= Old RevisionGUID=BAEA0B10-AB2E-47FD-BC60-A55F1CCBE082 New RevisionGUID=
+Change component parameters: Designator = "SW1" ("SW1"); Footprint = "FP-EVQ-P2402M-MFG"; UniqueID = "\NGGDVQUB" ("\NGGDVQUB")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "P11080SCT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "U1" ("U1"); Footprint = "FP-PE-MFG"; UniqueID = "\WNPYRPXN" ("\WNPYRPXN")
+Added Member To Class: ClassName=Motor Controller Member=Component SW1 EVQ-P2402M
+Added Member To Class: ClassName=Motor Controller Member=Component U1 ATSAMD21G18A-MF
+Added Room: Name=Motor Controller

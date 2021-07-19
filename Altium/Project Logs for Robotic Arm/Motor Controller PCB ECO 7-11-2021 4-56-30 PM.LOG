@@ -1,0 +1,125 @@
+Change Component Footprint: Designator=C7 Old Footprint=CAPC2013X140X50LL20T25 New Footprint=CAPC3225X27N
+Change component parameters: Designator = "C7" ("C7"); Footprint = "CAPC2013X140X50LL20T25"; UniqueID = "\YYRKCYAI" ("\YYRKCYAI")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1121070"; VariantName = "[No Variations]"
+Added Component: Designator=C20(CAPC3225X27N)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1121070"; VariantName = "[No Variations]"
+Added Component: Designator=C21(CAPC3225X27N)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1121070"; VariantName = "[No Variations]"
+Added Component: Designator=C22(CAPC3225X27N)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1121070"; VariantName = "[No Variations]"
+Added Component: Designator=C23(CAPC3225X27N)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1121070"; VariantName = "[No Variations]"
+Added Component: Designator=C24(CAPC3225X27N)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1121070"; VariantName = "[No Variations]"
+Added Component: Designator=C25(CAPC3225X27N)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1121070"; VariantName = "[No Variations]"
+Added Component: Designator=C26(CAPC3225X27N)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1121070"; VariantName = "[No Variations]"
+Added Component: Designator=C27(CAPC3225X27N)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1121070"; VariantName = "[No Variations]"
+Added Component: Designator=C28(CAPC3225X27N)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1121070"; VariantName = "[No Variations]"
+Added Component: Designator=C29(CAPC3225X27N)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1121070"; VariantName = "[No Variations]"
+Added Component: Designator=C30(CAPC3225X27N)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1121070"; VariantName = "[No Variations]"
+Added Component: Designator=C31(CAPC3225X27N)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1121070"; VariantName = "[No Variations]"
+Added Component: Designator=C32(CAPC3225X27N)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1121070"; VariantName = "[No Variations]"
+Added Component: Designator=C33(CAPC3225X27N)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1121070"; VariantName = "[No Variations]"
+Added Component: Designator=C34(CAPC3225X27N)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1121070"; VariantName = "[No Variations]"
+Added Component: Designator=C35(CAPC3225X27N)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1121070"; VariantName = "[No Variations]"
+Added Component: Designator=C36(CAPC3225X27N)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1121070"; VariantName = "[No Variations]"
+Added Component: Designator=C37(CAPC3225X27N)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1121070"; VariantName = "[No Variations]"
+Added Component: Designator=C38(CAPC3225X27N)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1121070"; VariantName = "[No Variations]"
+Added Component: Designator=C39(CAPC3225X27N)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1121070"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C20-1
+Added Pin To Net: NetName=VS Pin=C20-2
+Added Pin To Net: NetName=GND Pin=C21-1
+Added Pin To Net: NetName=VS Pin=C21-2
+Added Pin To Net: NetName=GND Pin=C22-1
+Added Pin To Net: NetName=VS Pin=C22-2
+Added Pin To Net: NetName=GND Pin=C23-1
+Added Pin To Net: NetName=VS Pin=C23-2
+Added Pin To Net: NetName=GND Pin=C24-1
+Added Pin To Net: NetName=VS Pin=C24-2
+Added Pin To Net: NetName=GND Pin=C25-1
+Added Pin To Net: NetName=VS Pin=C25-2
+Added Pin To Net: NetName=GND Pin=C26-1
+Added Pin To Net: NetName=VS Pin=C26-2
+Added Pin To Net: NetName=GND Pin=C27-1
+Added Pin To Net: NetName=VS Pin=C27-2
+Added Pin To Net: NetName=GND Pin=C28-1
+Added Pin To Net: NetName=VS Pin=C28-2
+Added Pin To Net: NetName=GND Pin=C29-1
+Added Pin To Net: NetName=VS Pin=C29-2
+Added Pin To Net: NetName=GND Pin=C30-1
+Added Pin To Net: NetName=VS Pin=C30-2
+Added Pin To Net: NetName=GND Pin=C31-1
+Added Pin To Net: NetName=VS Pin=C31-2
+Added Pin To Net: NetName=GND Pin=C32-1
+Added Pin To Net: NetName=VS Pin=C32-2
+Added Pin To Net: NetName=GND Pin=C33-1
+Added Pin To Net: NetName=VS Pin=C33-2
+Added Pin To Net: NetName=GND Pin=C34-1
+Added Pin To Net: NetName=VS Pin=C34-2
+Added Pin To Net: NetName=GND Pin=C35-1
+Added Pin To Net: NetName=VS Pin=C35-2
+Added Pin To Net: NetName=GND Pin=C36-1
+Added Pin To Net: NetName=VS Pin=C36-2
+Added Pin To Net: NetName=GND Pin=C37-1
+Added Pin To Net: NetName=VS Pin=C37-2
+Added Pin To Net: NetName=GND Pin=C38-1
+Added Pin To Net: NetName=VS Pin=C38-2
+Added Pin To Net: NetName=GND Pin=C39-1
+Added Pin To Net: NetName=VS Pin=C39-2
+Added Member To Class: ClassName=Motor Controller Member=Component C20 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C21 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C22 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C23 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C24 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C25 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C26 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C27 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C28 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C29 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C30 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C31 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C32 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C33 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C34 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C35 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C36 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C37 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C38 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C39 10uF
+Added Room: Name=Motor Controller

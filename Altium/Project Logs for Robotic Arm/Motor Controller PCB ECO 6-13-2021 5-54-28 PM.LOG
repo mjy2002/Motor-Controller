@@ -1,0 +1,212 @@
+Change Component Designator: OldDesignator=C8 NewDesignator=C30
+Change Component Designator: OldDesignator=C9 NewDesignator=C31
+Change Component Designator: OldDesignator=C10 NewDesignator=C32
+Added Component: Designator=C8(0603CAP)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "478-12227-1-ND"; VariantName = "[No Variations]"
+Added Component: Designator=C9(CAPC2013X140X50LL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0805ZC106KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2116198"; VariantName = "[No Variations]"
+Added Component: Designator=C10(CAPC2013X140X50LL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0805ZC106KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2116198"; VariantName = "[No Variations]"
+Added Component: Designator=C11(CAPC2013X140X50LL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0805ZC106KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2116198"; VariantName = "[No Variations]"
+Added Component: Designator=C12(CAPC2013X140X50LL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0805ZC106KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2116198"; VariantName = "[No Variations]"
+Added Component: Designator=C13(CAPC2013X140X50LL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0805ZC106KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2116198"; VariantName = "[No Variations]"
+Added Component: Designator=C14(CAPC2013X140X50LL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0805ZC106KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2116198"; VariantName = "[No Variations]"
+Added Component: Designator=C15(CAPC2013X140X50LL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0805ZC106KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2116198"; VariantName = "[No Variations]"
+Added Component: Designator=C16(CAPC2013X140X50LL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0805ZC106KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2116198"; VariantName = "[No Variations]"
+Added Component: Designator=C17(CAPC2013X140X50LL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0805ZC106KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2116198"; VariantName = "[No Variations]"
+Added Component: Designator=C18(CAPC2013X140X50LL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0805ZC106KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2116198"; VariantName = "[No Variations]"
+Added Component: Designator=C19(CAPC2013X140X50LL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0805ZC106KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2116198"; VariantName = "[No Variations]"
+Added Component: Designator=C20(CAPC2013X140X50LL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0805ZC106KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2116198"; VariantName = "[No Variations]"
+Added Component: Designator=C21(CAPC2013X140X50LL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0805ZC106KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2116198"; VariantName = "[No Variations]"
+Added Component: Designator=C22(CAPC2013X140X50LL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0805ZC106KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2116198"; VariantName = "[No Variations]"
+Added Component: Designator=C23(CAPC2013X140X50LL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0805ZC106KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2116198"; VariantName = "[No Variations]"
+Added Component: Designator=C24(CAPC2013X140X50LL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0805ZC106KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2116198"; VariantName = "[No Variations]"
+Added Component: Designator=C25(CAPC2013X140X50LL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0805ZC106KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2116198"; VariantName = "[No Variations]"
+Added Component: Designator=C26(CAPC2013X140X50LL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0805ZC106KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2116198"; VariantName = "[No Variations]"
+Added Component: Designator=C27(CAPC2013X140X50LL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0805ZC106KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2116198"; VariantName = "[No Variations]"
+Added Component: Designator=C28(CAPC2013X140X50LL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0805ZC106KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Future Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2116198"; VariantName = "[No Variations]"
+Added Component: Designator=C29(CAPC1005X55X10NL05)
+Add component (AddParameter): Name = "Applications"; Value = "GeneralPurpose"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance"; Value = "0.047µF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "08/2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Family"; Value = "CeramicCapacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height - Seated (Max)"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kits"; Value = "445-9021-KIT-ND-KITMLCC100PF-10UF04026.3-50V445-173086-KIT-ND-C0402-2220X7R6.3-50V1,000PF-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Spacing"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Style"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.tdk.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "SurfaceMount,MLCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Online Catalog"; Value = "CSeries,GeneralPurpose"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-55°C~125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Other Names"; Value = "445-7336-1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "0402(1005Metric)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "2-Pin Surface Mount Device, Body 1 x 0.5 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "1005"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "CutTape(CT)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCN Part Number"; Value = "MLCCPartNumberChange30/Nov/2012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Training Modules"; Value = "CSeriesGeneralApplicationsSEAT,CCV,andTVCLDesignToolsGuidetoReplacinganElectrolyticCapacitorwithanMLCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ratings"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Information"; Value = "RoHSCertificate-MLCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size / Dimension"; Value = "0.039"Lx0.020"W(1.00mmx0.50mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Standard Package"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Thickness (Max)"; Value = "0.022"(0.55mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "±10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage - Rated"; Value = "50V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=CP Pin=C8-1
+Added Pin To Net: NetName=VS Pin=C8-2
+Added Pin To Net: NetName=PGND Pin=C9-1
+Added Pin To Net: NetName=VS Pin=C9-2
+Added Pin To Net: NetName=PGND Pin=C10-1
+Added Pin To Net: NetName=VS Pin=C10-2
+Added Pin To Net: NetName=PGND Pin=C11-1
+Added Pin To Net: NetName=VS Pin=C11-2
+Added Pin To Net: NetName=PGND Pin=C12-1
+Added Pin To Net: NetName=VS Pin=C12-2
+Added Pin To Net: NetName=PGND Pin=C13-1
+Added Pin To Net: NetName=VS Pin=C13-2
+Added Pin To Net: NetName=PGND Pin=C14-1
+Added Pin To Net: NetName=VS Pin=C14-2
+Added Pin To Net: NetName=PGND Pin=C15-1
+Added Pin To Net: NetName=VS Pin=C15-2
+Added Pin To Net: NetName=PGND Pin=C16-1
+Added Pin To Net: NetName=VS Pin=C16-2
+Added Pin To Net: NetName=PGND Pin=C17-1
+Added Pin To Net: NetName=VS Pin=C17-2
+Added Pin To Net: NetName=PGND Pin=C18-1
+Added Pin To Net: NetName=VS Pin=C18-2
+Added Pin To Net: NetName=PGND Pin=C19-1
+Added Pin To Net: NetName=VS Pin=C19-2
+Added Pin To Net: NetName=PGND Pin=C20-1
+Added Pin To Net: NetName=VS Pin=C20-2
+Added Pin To Net: NetName=PGND Pin=C21-1
+Added Pin To Net: NetName=VS Pin=C21-2
+Added Pin To Net: NetName=PGND Pin=C22-1
+Added Pin To Net: NetName=VS Pin=C22-2
+Added Pin To Net: NetName=PGND Pin=C23-1
+Added Pin To Net: NetName=VS Pin=C23-2
+Added Pin To Net: NetName=PGND Pin=C24-1
+Added Pin To Net: NetName=VS Pin=C24-2
+Added Pin To Net: NetName=PGND Pin=C25-1
+Added Pin To Net: NetName=VS Pin=C25-2
+Added Pin To Net: NetName=PGND Pin=C26-1
+Added Pin To Net: NetName=VS Pin=C26-2
+Added Pin To Net: NetName=PGND Pin=C27-1
+Added Pin To Net: NetName=VS Pin=C27-2
+Added Pin To Net: NetName=PGND Pin=C28-1
+Added Pin To Net: NetName=VS Pin=C28-2
+Added Pin To Net: NetName=CPL Pin=C29-1
+Added Pin To Net: NetName=CPH Pin=C29-2
+Change Net Name : Old Net Name=PGND New Net Name=PWRGND
+Added Member To Class: ClassName=Motor Controller Member=Component C8 1 uF
+Added Member To Class: ClassName=Motor Controller Member=Component C9 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C11 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C12 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C13 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C14 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C15 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C16 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C17 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C18 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C19 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C20 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C21 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C22 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C23 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C24 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C25 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C26 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C27 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C28 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C29 47nF
+Added Member To Class: ClassName=Motor Controller Member=Component C30 22 pF
+Added Member To Class: ClassName=Motor Controller Member=Component C31 22 pF
+Added Member To Class: ClassName=Motor Controller Member=Component C32 22 pF
+Added Member To Class: ClassName=Motor Controller Member=Component R5 330
+Added Member To Class: ClassName=Motor Controller Member=Component U2 DRV8316
+Added Room: Name=Motor Controller

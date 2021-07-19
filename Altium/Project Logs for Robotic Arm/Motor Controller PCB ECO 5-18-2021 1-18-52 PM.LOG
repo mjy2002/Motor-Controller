@@ -1,0 +1,12 @@
+Change Physical Footprint: Designator=C1 Old Footprint=0603CAP New Footprint=0603CAP
+Change Physical Footprint: Designator=C2 Old Footprint=0402CAP New Footprint=0402CAP
+Change Physical Footprint: Designator=C3 Old Footprint=0402CAP New Footprint=0402CAP
+Change Physical Footprint: Designator=C4 Old Footprint=0402CAP New Footprint=0402CAP
+Change Physical Footprint: Designator=C5 Old Footprint=0402CAP New Footprint=0402CAP
+Change Physical Footprint: Designator=C6 Old Footprint=0603CAP New Footprint=0603CAP
+Change Physical Footprint: Designator=C7 Old Footprint=0402CAP New Footprint=0402CAP
+Change Physical Footprint: Designator=D1 Old Footprint=FP-APT1608LSECK-J3-PRV-MFG New Footprint=FP-APT1608LSECK-J3-PRV-MFG
+Change Physical Footprint: Designator=R1 Old Footprint=0402RES New Footprint=0402RES
+Change Physical Footprint: Designator=SW1 Old Footprint=EVQ-P2402M New Footprint=EVQ-P2402M
+Change Physical Footprint: Designator=U1 Old Footprint=QFN-48 New Footprint=QFN-48
+Change Physical Footprint: Designator=Y1 Old Footprint=ABS05W-32.768KHZ-D-2-T New Footprint=ABS05W-32.768KHZ-D-2-T

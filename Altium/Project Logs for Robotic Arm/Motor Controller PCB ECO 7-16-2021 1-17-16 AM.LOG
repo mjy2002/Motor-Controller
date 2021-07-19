@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=C7 Old Footprint=CAPC3225X27N New Footprint=FP-GRT31C-0_2-IPC_B
+Change component parameters: Designator = "C7" ("C7"); Footprint = "CAPC3225X27N"; UniqueID = "\DTZWIDRX" ("\DTZWIDRX")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "490-12457-1-ND"; VariantName = "[No Variations]"

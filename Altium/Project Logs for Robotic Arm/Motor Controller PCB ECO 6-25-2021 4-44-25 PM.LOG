@@ -1,0 +1,57 @@
+Change Component Footprint: Designator=U6 Old Footprint=DBV0005A_M New Footprint=DBV0005A_M
+Change Component Footprint: Designator=R5 Old Footprint=RESC1005X40X25LL05T05 New Footprint=RESC1005X40X25LL05T05
+Change Component Footprint: Designator=R6 Old Footprint=RESC1005X40X25LL05T05 New Footprint=RESC1005X40X25LL05T05
+Change Component Footprint: Designator=R7 Old Footprint=RESC1005X40X25LL05T05 New Footprint=RESC1005X40X25LL05T05
+Change Component Footprint: Designator=R8 Old Footprint=RESC1005X40X25LL05T05 New Footprint=RESC1005X40X25LL05T05
+Change Component Footprint: Designator=R14 Old Footprint=RESC1005X40X25LL05T05 New Footprint=RESC1005X40X25LL05T05
+Change Component Footprint: Designator=R15 Old Footprint=RESC1005X40X25LL05T05 New Footprint=RESC1005X40X25LL05T05
+Change Component Footprint: Designator=R16 Old Footprint=RESC1005X40X25LL05T05 New Footprint=RESC1005X40X25LL05T05
+Change Component Footprint: Designator=R18 Old Footprint=RESC1005X40X25LL05T05 New Footprint=RESC1005X40X25LL05T05
+Change Component Footprint: Designator=R19 Old Footprint=RESC1005X40X25LL05T05 New Footprint=RESC1005X40X25LL05T05
+Change Component Footprint: Designator=R20 Old Footprint=RESC1005X40X25LL05T05 New Footprint=RESC1005X40X25LL05T05
+Added Component: Designator=P1(Power Pad)
+Added Component: Designator=P3(Power Pad)
+Added Component: Designator=P5(Power Pad)
+Added Component: Designator=P7(Power Pad)
+Added Component: Designator=P9(Power Pad)
+Added Pin To Net: NetName=VS Pin=P1-1
+Added Pin To Net: NetName=VS Pin=P1-1
+Added Pin To Net: NetName=PHASE_U Pin=P3-1
+Added Pin To Net: NetName=PHASE_U Pin=P3-1
+Added Pin To Net: NetName=PHASE_V Pin=P5-1
+Added Pin To Net: NetName=PHASE_V Pin=P5-1
+Added Pin To Net: NetName=PHASE_W Pin=P7-1
+Added Pin To Net: NetName=PHASE_W Pin=P7-1
+Added Pin To Net: NetName=GND Pin=P9-1
+Added Pin To Net: NetName=GND Pin=P9-1
+Added Member To Class: ClassName=Motor Controller Member=Component C10 100nF
+Added Member To Class: ClassName=Motor Controller Member=Component C11 22pF
+Added Member To Class: ClassName=Motor Controller Member=Component C12 1uF
+Added Member To Class: ClassName=Motor Controller Member=Component C13 22uF
+Added Member To Class: ClassName=Motor Controller Member=Component C15 1uF
+Added Member To Class: ClassName=Motor Controller Member=Component C16 22pF
+Added Member To Class: ClassName=Motor Controller Member=Component C17 22pF
+Added Member To Class: ClassName=Motor Controller Member=Component C18 22pF
+Added Member To Class: ClassName=Motor Controller Member=Component C19 22pF
+Added Member To Class: ClassName=Motor Controller Member=Component C21 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C23 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C25 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C27 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C29 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C31 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C35 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component P1 Power Pad
+Added Member To Class: ClassName=Motor Controller Member=Component P3 Power Pad
+Added Member To Class: ClassName=Motor Controller Member=Component P5 Power Pad
+Added Member To Class: ClassName=Motor Controller Member=Component P7 Power Pad
+Added Member To Class: ClassName=Motor Controller Member=Component P9 Power Pad
+Added Member To Class: ClassName=Motor Controller Member=Component R2 27
+Added Member To Class: ClassName=Motor Controller Member=Component R3 750
+Added Member To Class: ClassName=Motor Controller Member=Component R5 5.1k
+Added Member To Class: ClassName=Motor Controller Member=Component R6 5.1k
+Added Member To Class: ClassName=Motor Controller Member=Component R7 5.1k
+Added Member To Class: ClassName=Motor Controller Member=Component R8 5.1k
+Added Member To Class: ClassName=Motor Controller Member=Component U1 AS5047D-ATSM
+Added Member To Class: ClassName=Motor Controller Member=Component U2 ATSAMD21G18A-MF
+Added Member To Class: ClassName=Motor Controller Member=Component U3 DRV8316
+Added Room: Name=Motor Controller

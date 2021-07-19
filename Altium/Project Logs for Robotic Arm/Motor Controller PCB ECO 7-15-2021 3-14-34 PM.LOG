@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=GND Pin=C22-1
+Removed Pin From Net: NetName=VS Pin=C22-2
+Added Room: Name=Motor Controller

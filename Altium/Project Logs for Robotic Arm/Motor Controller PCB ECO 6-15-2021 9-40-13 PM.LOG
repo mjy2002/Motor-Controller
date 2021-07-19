@@ -1,0 +1,36 @@
+Change Component Footprint: Designator=C10 Old Footprint=CAPC2013X140X50LL20T25 New Footprint=CAPC2013X140X50LL20T25
+Change Component Footprint: Designator=C34 Old Footprint=FP-C3225-250-0_4-IPC_A New Footprint=FP-C3225-250-0_4-IPC_A
+Change Component Footprint: Designator=R4 Old Footprint=RESC1005X40X25LL05T05 New Footprint=RESC1005X40X25LL05T05
+Change Component Footprint: Designator=R8 Old Footprint=RESC1005X40X25LL05T05 New Footprint=RESC1005X40X25LL05T05
+Change Component Footprint: Designator=R9 Old Footprint=RESC1005X40X25LL05T05 New Footprint=RESC1005X40X25LL05T05
+Added Component: Designator=L1(INDC3225X25N)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "50AC9370"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=FB_BK Pin=L1-1
+Added Pin To Net: NetName=SW_BK Pin=L1-2
+Added Member To Class: ClassName=Motor Controller Member=Component C8 100nF
+Added Member To Class: ClassName=Motor Controller Member=Component C9 100nF
+Added Member To Class: ClassName=Motor Controller Member=Component C10 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C11 1uF
+Added Member To Class: ClassName=Motor Controller Member=Component C12 100nF
+Added Member To Class: ClassName=Motor Controller Member=Component C13 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C14 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C15 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C16 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C17 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C18 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C19 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C20 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C21 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C22 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C23 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C24 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C25 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C26 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C28 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C29 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component C30 10uF
+Added Member To Class: ClassName=Motor Controller Member=Component L1 47uH
+Added Member To Class: ClassName=Motor Controller Member=Component R4 4.7k
+Added Member To Class: ClassName=Motor Controller Member=Component R5 330
+Added Room: Name=Motor Controller
