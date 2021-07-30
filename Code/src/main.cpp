@@ -2,20 +2,22 @@
 #include <Wire.h>
 #include <SimpleFOC.h>
 #include <Math.h>
-#include "encoders/as5048a/PreciseMagneticSensorAS5048A.h"
+#include "encoders/as5047/MagneticSensorAS5047.h"
 #include "drivers/drv8316/drv8316.h"
 
 void printDRV8316Status();
 void printSensorStatus();
 
-#define SENSOR_nCS SDA
-#define DRIVER_nCS SCL
+#define SENSOR_nCS 30
+#define DRIVER_nCS 31
 #define DRIVER_UH 5
 #define DRIVER_VH 6
 #define DRIVER_WH 9
 #define DRIVER_OFF 11
+#define nFAULT SDA
+#define LED 13
 
-MagneticSensorSPIConfig_s AS5048 = {
+MagneticSensorSPIConfig_s AS5047 = {
     .spi_mode = SPI_MODE1,
     .clock_speed = 1000000,
     .bit_resolution = 14,
@@ -24,7 +26,7 @@ MagneticSensorSPIConfig_s AS5048 = {
     .command_rw_bit = 14,
     .command_parity_bit = 15};
 
-PreciseMagneticSensorAS5048A sensor(SENSOR_nCS, false, SPISettings(4000000, BitOrder::MSBFIRST, SPI_MODE1));
+MagneticSensorAS5047 sensor(SENSOR_nCS, false, SPISettings(4000000, BitOrder::MSBFIRST, SPI_MODE1));
 BLDCMotor motor = BLDCMotor(11);
 DRV8316Driver3PWM driver = DRV8316Driver3PWM(DRIVER_UH, DRIVER_VH, DRIVER_WH, DRIVER_nCS, false);
 
@@ -33,6 +35,9 @@ void onMotor(char *cmd) { command.motor(&motor, cmd); }
 
 void setup()
 {
+  pinMode(nFAULT, INPUT);
+  pinMode(LED, OUTPUT);
+
   sensor.init();
   motor.linkSensor(&sensor);
 
@@ -59,7 +64,7 @@ void setup()
     ;
 
   motor.init();
-  motor.initFOC(3.96, CW);
+  motor.initFOC(0.77, CW);
 
   command.add('M', onMotor, "Motor control");
 
@@ -72,6 +77,7 @@ void setup()
 
 void loop()
 {
+  // digitalWrite(LED, digitalRead(nFAULT));
   motor.loopFOC();
   motor.move(motor.target);
   // motor.monitor();
@@ -80,18 +86,18 @@ void loop()
 
 void printSensorStatus()
 {
-  AS5048Diagnostics diag = sensor.readDiagnostics();
-  Serial.println("AS5048A Status:");
+  AS5047Diagnostics diag = sensor.readDiagnostics();
+  Serial.println("AS5047 Status:");
   Serial.print("Error: ");
   Serial.println(sensor.isErrorFlag());
-  Serial.print("Level High: ");
-  Serial.println(diag.compHigh);
-  Serial.print("Level Low: ");
-  Serial.println(diag.compLow);
-  Serial.print("AGC: ");
-  Serial.println(diag.agc);
-  Serial.print("OCF: ");
-  Serial.println(diag.ocf);
+  // Serial.print("Level High: ");
+  // Serial.println(diag.compHigh);
+  // Serial.print("Level Low: ");
+  // Serial.println(diag.compLow);
+  // Serial.print("AGC: ");
+  // Serial.println(diag.agc);
+  // Serial.print("OCF: ");
+  // Serial.println(diag.ocf);
   Serial.print("COF: ");
   Serial.println(diag.cof);
   float currentAngle = sensor.getCurrentAngle();
@@ -104,7 +110,7 @@ void printSensorStatus()
   Serial.println(sensor.isErrorFlag());
   if (sensor.isErrorFlag())
   {
-    AS5048Error err = sensor.clearErrorFlag();
+    AS5047Error err = sensor.clearErrorFlag();
     Serial.print("Command invalid: ");
     Serial.println(err.commandInvalid);
     Serial.print("Framing error: ");
