@@ -10,33 +10,40 @@ void printSensorStatus();
 
 #define SENSOR_nCS 30
 #define DRIVER_nCS 31
-#define DRIVER_UH 5
-#define DRIVER_VH 6
-#define DRIVER_WH 9
+#define DRIVER_UH  5
+#define DRIVER_VH  6
+#define DRIVER_WH  9
 #define DRIVER_OFF 11
-#define nFAULT SDA
-#define LED 13
+#define nFAULT     SDA
+#define USB_ONLY   SCL
+#define DISABLE    16
+#define LED        13
 
 MagneticSensorSPIConfig_s AS5047 = {
-    .spi_mode = SPI_MODE1,
-    .clock_speed = 1000000,
-    .bit_resolution = 14,
-    .angle_register = 0x3FFF,
-    .data_start_bit = 13,
-    .command_rw_bit = 14,
-    .command_parity_bit = 15};
+  .spi_mode = SPI_MODE1,
+  .clock_speed = 1000000,
+  .bit_resolution = 14,
+  .angle_register = 0x3FFF,
+  .data_start_bit = 13,
+  .command_rw_bit = 14,
+  .command_parity_bit = 15
+};
 
 MagneticSensorAS5047 sensor(SENSOR_nCS, false, SPISettings(4000000, BitOrder::MSBFIRST, SPI_MODE1));
-BLDCMotor motor = BLDCMotor(11);
-DRV8316Driver3PWM driver = DRV8316Driver3PWM(DRIVER_UH, DRIVER_VH, DRIVER_WH, DRIVER_nCS, false);
+BLDCMotor motor(11);
+DRV8316Driver3PWM driver(DRIVER_UH, DRIVER_VH, DRIVER_WH, DRIVER_nCS, false);
+Commander command(Serial);
 
-Commander command = Commander(Serial);
 void onMotor(char *cmd) { command.motor(&motor, cmd); }
 
 void setup()
 {
   pinMode(nFAULT, INPUT);
+  pinMode(USB_ONLY, INPUT);
+  pinMode(DISABLE, OUTPUT);
   pinMode(LED, OUTPUT);
+
+  digitalWrite(DISABLE, LOW);
 
   sensor.init();
   motor.linkSensor(&sensor);
@@ -61,12 +68,16 @@ void setup()
   motor.useMonitoring(Serial);
 
   while (!Serial)
-    ;
+    _delay(1000);
 
+  Serial.println(digitalRead(USB_ONLY) ?
+    F("USB is power source, motor disabled.") :
+    F("External power supply connected, motor enabled.")
+  );
   motor.init();
-  motor.initFOC(0.77, CW);
+  motor.initFOC(2.80, CW);
 
-  command.add('M', onMotor, "Motor control");
+  command.add('M', onMotor);
 
   Serial.println(F("Motor ready."));
   printDRV8316Status();
@@ -77,7 +88,6 @@ void setup()
 
 void loop()
 {
-  // digitalWrite(LED, digitalRead(nFAULT));
   motor.loopFOC();
   motor.move(motor.target);
   // motor.monitor();
@@ -87,35 +97,27 @@ void loop()
 void printSensorStatus()
 {
   AS5047Diagnostics diag = sensor.readDiagnostics();
-  Serial.println("AS5047 Status:");
-  Serial.print("Error: ");
+  Serial.println(F("AS5047 Status:"));
+  Serial.print(F("Error: "));
   Serial.println(sensor.isErrorFlag());
-  // Serial.print("Level High: ");
-  // Serial.println(diag.compHigh);
-  // Serial.print("Level Low: ");
-  // Serial.println(diag.compLow);
-  // Serial.print("AGC: ");
-  // Serial.println(diag.agc);
-  // Serial.print("OCF: ");
-  // Serial.println(diag.ocf);
-  Serial.print("COF: ");
+  Serial.print(F("COF: "));
   Serial.println(diag.cof);
   float currentAngle = sensor.getCurrentAngle();
-  Serial.print("Angle: ");
+  Serial.print(F("Angle: "));
   Serial.println(currentAngle);
   uint16_t magnitude = sensor.readMagnitude();
-  Serial.print("Magnitude: ");
+  Serial.print(F("Magnitude: "));
   Serial.println(magnitude);
-  Serial.print("Error: ");
+  Serial.print(F("Error: "));
   Serial.println(sensor.isErrorFlag());
   if (sensor.isErrorFlag())
   {
     AS5047Error err = sensor.clearErrorFlag();
-    Serial.print("Command invalid: ");
+    Serial.print(F("Command invalid: "));
     Serial.println(err.commandInvalid);
-    Serial.print("Framing error: ");
+    Serial.print(F("Framing error: "));
     Serial.println(err.framingError);
-    Serial.print("Parity error: ");
+    Serial.print(F("Parity error: "));
     Serial.println(err.parityError);
   }
   Serial.println();
@@ -124,60 +126,60 @@ void printSensorStatus()
 void printDRV8316Status()
 {
   DRV8316Status status = driver.getStatus();
-  Serial.println("DRV8316 Status:");
-  Serial.print("Fault: ");
+  Serial.println(F("DRV8316 Status:"));
+  Serial.print(F("Fault: "));
   Serial.println(status.isFault());
-  Serial.print("Buck Error: ");
+  Serial.print(F("Buck Error: "));
   Serial.print(status.isBuckError());
-  Serial.print("  Undervoltage: ");
+  Serial.print(F("  Undervoltage: "));
   Serial.print(status.isBuckUnderVoltage());
-  Serial.print("  OverCurrent: ");
+  Serial.print(F("  OverCurrent: "));
   Serial.println(status.isBuckOverCurrent());
-  Serial.print("Charge Pump UnderVoltage: ");
+  Serial.print(F("Charge Pump UnderVoltage: "));
   Serial.println(status.isChargePumpUnderVoltage());
-  Serial.print("OTP Error: ");
+  Serial.print(F("OTP Error: "));
   Serial.println(status.isOneTimeProgrammingError());
-  Serial.print("OverCurrent: ");
+  Serial.print(F("OverCurrent: "));
   Serial.print(status.isOverCurrent());
-  Serial.print("  Ah: ");
+  Serial.print(F("  Ah: "));
   Serial.print(status.isOverCurrent_Ah());
-  Serial.print("  Al: ");
+  Serial.print(F("  Al: "));
   Serial.print(status.isOverCurrent_Al());
-  Serial.print("  Bh: ");
+  Serial.print(F("  Bh: "));
   Serial.print(status.isOverCurrent_Bh());
-  Serial.print("  Bl: ");
+  Serial.print(F("  Bl: "));
   Serial.print(status.isOverCurrent_Bl());
-  Serial.print("  Ch: ");
+  Serial.print(F("  Ch: "));
   Serial.print(status.isOverCurrent_Ch());
-  Serial.print("  Cl: ");
+  Serial.print(F("  Cl: "));
   Serial.println(status.isOverCurrent_Cl());
-  Serial.print("OverTemperature: ");
+  Serial.print(F("OverTemperature: "));
   Serial.print(status.isOverTemperature());
-  Serial.print("  Shutdown: ");
+  Serial.print(F("  Shutdown: "));
   Serial.print(status.isOverTemperatureShutdown());
-  Serial.print("  Warning: ");
+  Serial.print(F("  Warning: "));
   Serial.println(status.isOverTemperatureWarning());
-  Serial.print("OverVoltage: ");
+  Serial.print(F("OverVoltage: "));
   Serial.println(status.isOverVoltage());
-  Serial.print("PowerOnReset: ");
+  Serial.print(F("PowerOnReset: "));
   Serial.println(status.isPowerOnReset());
-  Serial.print("SPI Error: ");
+  Serial.print(F("SPI Error: "));
   Serial.print(status.isSPIError());
-  Serial.print("  Address: ");
+  Serial.print(F("  Address: "));
   Serial.print(status.isSPIAddressError());
-  Serial.print("  Clock: ");
+  Serial.print(F("  Clock: "));
   Serial.print(status.isSPIClockFramingError());
-  Serial.print("  Parity: ");
+  Serial.print(F("  Parity: "));
   Serial.println(status.isSPIParityError());
   if (status.isFault())
     driver.clearFault();
   delayMicroseconds(1); // ensure 400ns delay
   DRV8316_PWMMode val = driver.getPWMMode();
-  Serial.print("PWM Mode: ");
+  Serial.print(F("PWM Mode: "));
   Serial.println(val);
   delayMicroseconds(1); // ensure 400ns delay
   bool lock = driver.isRegistersLocked();
-  Serial.print("Lock: ");
+  Serial.print(F("Lock: "));
   Serial.println(lock);
   Serial.println();
 }
