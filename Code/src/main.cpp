@@ -36,6 +36,15 @@ Commander command(Serial);
 
 void onMotor(char *cmd) { command.motor(&motor, cmd); }
 
+void onDRV(char *cmd) {
+  DRV8316Status status = driver.getStatus();
+  switch (cmd[0]) {
+    case 'F': // fault
+      Serial.println(status.isFault());
+    default:
+  }
+}
+
 void setup()
 {
   pinMode(nFAULT, INPUT);
@@ -78,6 +87,7 @@ void setup()
   motor.initFOC(2.80, CW);
 
   command.add('M', onMotor);
+  command.add('D', onDRV);
 
   Serial.println(F("Motor ready."));
   printDRV8316Status();
