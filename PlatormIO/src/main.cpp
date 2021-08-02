@@ -8,6 +8,10 @@
 void printDRV8316Status();
 void printSensorStatus();
 
+// for use with multiple motors
+#define MOTOR_ID 0
+
+// pin definitions
 #define SENSOR_nCS 30
 #define DRIVER_nCS 31
 #define DRIVER_UH  5
@@ -42,6 +46,7 @@ void onDRV(char *cmd) {
     case 'F': // fault
       Serial.println(status.isFault());
     default:
+      break;
   }
 }
 
