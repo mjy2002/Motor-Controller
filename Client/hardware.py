@@ -10,7 +10,7 @@ from itertools import chain
 from serial import Serial
 from serial.serialutil import SerialException
 from dataclasses import dataclass
-from typing import Literal
+from typing import Literal, Optional, Any
 
 
 class Motor:
@@ -23,7 +23,7 @@ class Motor:
         Serial object
     port: str
         Serial port
-    id: int
+    id: Optional[int]
         Motor ID for multi-motor systems
     lock: Lock
         Thread lock for serial calls
@@ -42,7 +42,7 @@ class Motor:
 
         self.connect()
 
-    def _sendCommand(self, cmd: str) -> str:
+    def _sendCommand(self, cmd: str, returnType: type) -> Any:
         """
         Send a command to the motor
         *Intended for internal use only*
@@ -60,11 +60,14 @@ class Motor:
         with self.lock:
             try:
                 self.ser.write(f'{cmd}\n'.encode())
-                return self.ser.readline().decode().strip()
+                return returnType(self.ser.readline().decode().strip())
+            except ValueError:
+                print(
+                    f'Received data could not be parsed as {returnType}. COM may be desynced.'
+                )
             except SerialException:
                 print(f'Connection with motor {self.id} interrupted.')
                 self.ser.close()
-                return '0'
 
     def connect(self) -> None:
         """
@@ -72,7 +75,14 @@ class Motor:
         """
         self.ser.port = self.port
         self.ser.open()
-        self.id = int(self._sendCommand('I'))
+        self.id = r if (r := self._sendCommand('I', int)) is not None else None
+
+    def disconnect(self) -> None:
+        """
+        Disconnect from motor
+        """
+        self.disable()
+        self.ser.close()
 
     @property
     def alive(self) -> bool:
@@ -85,6 +95,94 @@ class Motor:
             True if alive, False otherwise
         """
         return self.ser.is_open
+
+    @property
+    def COMPrecision(self) -> Optional[int]:
+        """
+        Get COM decimal precision
+
+        Returns
+        -------
+        Optional[int]
+            Current COM precision
+        """
+        return r if (r := self._sendCommand('#', int)) is not None else None
+
+    @property
+    def enabled(self) -> Optional[bool]:
+        """
+        Check if motor is enabled
+
+        Returns
+        -------
+        Optional[bool]
+            True if enabled, False if disabled, None if unknown
+        """
+        return r if (r := self._sendCommand('ME', bool)) is not None else None
+
+    @property
+    def position(self) -> Optional[float]:
+        """
+        Getter for motor position
+
+        Returns
+        -------
+        Optional[float]
+            Current position, None if unknown
+        """
+        return r if (r := self._sendCommand('MMG6', float)) is not None else None
+
+    @property
+    def velocity(self) -> Optional[float]:
+        """
+        Getter for motor velocity
+
+        Returns
+        -------
+        Optional[float]
+            Current velocity, None if unknown
+        """
+        return r if (r := self._sendCommand('MMG5', float)) is not None else None
+
+    def setCOMPrecision(self, decimals: int) -> bool:
+        """
+        Set number of decimals in COM output
+
+        Parameters
+        ----------
+        decimals: int
+            Number of decimals to use
+
+        Returns
+        -------
+        bool
+            Confirmation
+        """
+        assert 1 <= decimals <= 15, 'Decimal precision must be within the range [1,15].'
+
+        return r == decimals if (r := self._sendCommand(f'#{decimals}', float)) is not None else False
+
+    def enable(self) -> bool:
+        """
+        Enable motor
+
+        Returns
+        -------
+        bool
+            Confirmation
+        """
+        return r == 1 if (r := self._sendCommand('ME1', int)) is not None else False
+
+    def disable(self) -> bool:
+        """
+        Disable motor
+
+        Returns
+        -------
+        bool
+            Confirmation
+        """
+        return r == 0 if (r := self._sendCommand('ME0', int)) is not None else False
 
     def setPIDs(self, stage: Literal['vel', 'angle'], *args: float, **kwargs: float) -> bool:
         """
@@ -112,28 +210,15 @@ class Motor:
         bool
             Confirmation
         """
-        controlType = 'A' if stage == 'angle' else 'V'
+        PIDType = 'A' if stage == 'angle' else 'V'
 
         success = True
         for char, arg in chain(zip(['P', 'I', 'D', 'R', 'L', 'F'], args), kwargs.items()):
-            success &= float(self._sendCommand(
-                f'M{controlType}{char}{arg}')) == arg
+            success &= r == arg if (
+                r := self._sendCommand(f'M{PIDType}{char}{arg}', float)
+            ) is not None else False
 
         return success
-
-    @property
-    def position(self) -> float:
-        """
-        Getter for motor position
-        """
-        return float(self._sendCommand('MMG6'))
-
-    @property
-    def velocity(self) -> float:
-        """
-        Getter for motor velocity
-        """
-        return float(self._sendCommand('MMG5'))
 
     def setCurrentLimit(self, limit: float) -> bool:
         """
@@ -149,7 +234,7 @@ class Motor:
         bool
             Confirmation
         """
-        return float(self._sendCommand(f'MLC{limit}')) == limit
+        return r == limit if (r := self._sendCommand(f'MLC{limit}', float)) is not None else False
 
     def setVoltageLimit(self, limit: float) -> bool:
         """
@@ -165,7 +250,7 @@ class Motor:
         bool
             Confirmation
         """
-        return float(self._sendCommand(f'MLU{limit}')) == limit
+        return r == limit if (r := self._sendCommand(f'MLU{limit}', float)) is not None else False
 
     def setVelocityLimit(self, limit: float) -> bool:
         """
@@ -181,7 +266,7 @@ class Motor:
         bool
             Confirmation
         """
-        return float(self._sendCommand(f'MLV{limit}')) == limit
+        return r == limit if (r := self._sendCommand(f'MLV{limit}', float)) is not None else False
 
     def setControlMode(self, mode: Literal['torque', 'velocity', 'angle'] = 'torque') -> bool:
         """
@@ -199,7 +284,7 @@ class Motor:
         bool
             Confirmation
         """
-        return self._sendCommand(f'M{mode}')[:3] == mode[:3]
+        return r[:3] == mode[:3] if (r := self._sendCommand(f'M{mode}', str)) is not None else False
 
     def move(self, pos: float) -> bool:
         """
@@ -215,4 +300,4 @@ class Motor:
         bool
             Confirmation
         """
-        return float(self._sendCommand(f'M{pos}')) == pos
+        return r == pos if (r := self._sendCommand(f'M{pos}', float)) is not None else False
