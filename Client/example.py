@@ -1,4 +1,4 @@
-from hardware import Motor
+from FOCMCInterface import Motor
 
 m = Motor('/dev/cu.usbmodem1243201')
 print(m.setCOMPrecision(5))

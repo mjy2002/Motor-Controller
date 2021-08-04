@@ -76,9 +76,7 @@ class Motor:
         """
         self.ser.port = self.port
         self.ser.open()
-        self.id = r if self.alive and (
-            r := self._sendCommand('I', int)
-        ) is not None else None
+        self.id = self._sendCommand('I', int) if self.alive else None
 
     def disconnect(self) -> None:
         """
@@ -109,9 +107,7 @@ class Motor:
         Optional[int]
             Current COM precision
         """
-        return r if self.alive and (
-            r := self._sendCommand('#', int)
-        ) is not None else None
+        return self._sendCommand('#', int) if self.alive else None
 
     @property
     def enabled(self) -> Optional[bool]:
@@ -123,9 +119,7 @@ class Motor:
         Optional[bool]
             True if enabled, False if disabled, None if unknown
         """
-        return r if self.alive and (
-            r := self._sendCommand('ME', bool)
-        ) is not None else None
+        return self._sendCommand('ME', bool) if self.alive else None
 
     @property
     def position(self) -> Optional[float]:
@@ -137,9 +131,7 @@ class Motor:
         Optional[float]
             Current position, None if unknown
         """
-        return r if self.alive and (
-            r := self._sendCommand('MMG6', float)
-        ) is not None else None
+        return self._sendCommand('MMG6', float) if self.alive else None
 
     @property
     def velocity(self) -> Optional[float]:
@@ -151,9 +143,7 @@ class Motor:
         Optional[float]
             Current velocity, None if unknown
         """
-        return r if self.alive and (
-            r := self._sendCommand('MMG5', float)
-        ) is not None else None
+        return self._sendCommand('MMG5', float) if self.alive else None
 
     def setCOMPrecision(self, decimals: int) -> bool:
         """
@@ -171,9 +161,7 @@ class Motor:
         """
         assert 1 <= decimals <= 15, 'Decimal precision must be within the range [1,15].'
 
-        return r == decimals if self.alive and (
-            r := self._sendCommand(f'#{decimals}', float)
-        ) is not None else False
+        return self._sendCommand(f'#{decimals}', float) == decimals if self.alive else False
 
     def enable(self) -> bool:
         """
@@ -184,9 +172,7 @@ class Motor:
         bool
             Confirmation
         """
-        return r == 1 if self.alive and (
-            r := self._sendCommand('ME1', int)
-        ) is not None else False
+        return self._sendCommand('ME1', int) == 1 if self.alive else False
 
     def disable(self) -> bool:
         """
@@ -197,9 +183,7 @@ class Motor:
         bool
             Confirmation
         """
-        return r == 0 if self.alive and (
-            r := self._sendCommand('ME0', int)
-        ) is not None else False
+        return self._sendCommand('ME0', int) == 0 if self.alive else False
 
     def setPIDs(self, stage: Literal['vel', 'angle'], *args: float, **kwargs: float) -> bool:
         """
@@ -231,9 +215,8 @@ class Motor:
 
         success = True
         for char, arg in chain(zip(['P', 'I', 'D', 'R', 'L', 'F'], args), kwargs.items()):
-            success &= r == arg if self.alive and (
-                r := self._sendCommand(f'M{PIDType}{char}{arg}', float)
-            ) is not None else False
+            success &= self._sendCommand(
+                f'M{PIDType}{char}{arg}', float) == arg if self.alive else False
 
         return success
 
@@ -251,9 +234,7 @@ class Motor:
         bool
             Confirmation
         """
-        return r == limit if self.alive and (
-            r := self._sendCommand(f'MLC{limit}', float)
-        ) is not None else False
+        return self._sendCommand(f'MLC{limit}', float) == limit if self.alive else False
 
     def setVoltageLimit(self, limit: float) -> bool:
         """
@@ -269,9 +250,7 @@ class Motor:
         bool
             Confirmation
         """
-        return r == limit if self.alive and (
-            r := self._sendCommand(f'MLU{limit}', float)
-        ) is not None else False
+        return self._sendCommand(f'MLU{limit}', float) == limit if self.alive else False
 
     def setVelocityLimit(self, limit: float) -> bool:
         """
@@ -287,9 +266,7 @@ class Motor:
         bool
             Confirmation
         """
-        return r == limit if self.alive and (
-            r := self._sendCommand(f'MLV{limit}', float)
-        ) is not None else False
+        return self._sendCommand(f'MLV{limit}', float) == limit if self.alive else False
 
     def setControlMode(self, mode: Literal['torque', 'velocity', 'angle'] = 'torque') -> bool:
         """
@@ -307,9 +284,7 @@ class Motor:
         bool
             Confirmation
         """
-        return r[:3] == mode[:3] if self.alive and (
-            r := self._sendCommand(f'M{mode}', str)
-        ) is not None else False
+        return self._sendCommand(f'M{mode}', str)[:3] == mode[:3] if self.alive else False
 
     def move(self, pos: float) -> bool:
         """
@@ -325,6 +300,4 @@ class Motor:
         bool
             Confirmation
         """
-        return r == pos if self.alive and (
-            r := self._sendCommand(f'M{pos}', float)
-        ) is not None else False
+        return self._sendCommand(f'M{pos}', float) == pos if self.alive else False
