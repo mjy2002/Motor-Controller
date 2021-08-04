@@ -8,6 +8,9 @@
 void printDRV8316Status();
 void printSensorStatus();
 
+// for human use or not
+#define HUMAN false
+
 // for use with multiple motors
 #define MOTOR_ID 0
 
@@ -50,6 +53,10 @@ void onDRV(char *cmd) {
   }
 }
 
+void onID(char *cmd) {
+  Serial.println(MOTOR_ID);
+}
+
 void setup()
 {
   pinMode(nFAULT, INPUT);
@@ -81,22 +88,30 @@ void setup()
   Serial.begin(115200);
   motor.useMonitoring(Serial);
 
-  while (!Serial)
-    _delay(1000);
+  if (HUMAN) {
+    while (!Serial)
+      _delay(1000);
+  
+    Serial.println(digitalRead(USB_ONLY) ?
+      F("USB is power source, motor disabled.") :
+      F("External power supply connected, motor enabled.")
+    );
+  }
 
-  Serial.println(digitalRead(USB_ONLY) ?
-    F("USB is power source, motor disabled.") :
-    F("External power supply connected, motor enabled.")
-  );
   motor.init();
   motor.initFOC(2.80, CW);
+  motor.disable();
 
   command.add('M', onMotor);
   command.add('D', onDRV);
+  command.add('I', onID);
 
-  Serial.println(F("Motor ready."));
-  printDRV8316Status();
-  printSensorStatus();
+  if (HUMAN) {
+    printDRV8316Status();
+    printSensorStatus();
+  } else {
+    command.verbose = VerboseMode::on_request;
+  }
 
   _delay(1000);
 }
