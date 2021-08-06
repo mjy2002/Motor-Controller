@@ -74,7 +74,7 @@ void setup()
 
   motor.linkDriver(&driver);
   motor.foc_modulation = FOCModulationType::SpaceVectorPWM;
-  motor.controller = MotionControlType::angle;
+  motor.controller = MotionControlType::torque;
 
   motor.PID_velocity.P = 0.2;
   motor.PID_velocity.I = 20;
@@ -99,7 +99,7 @@ void setup()
   }
 
   motor.init();
-  motor.initFOC(2.80, CW);
+  motor.initFOC(0.61, CW);
   motor.disable();
 
   command.add('M', onMotor);
