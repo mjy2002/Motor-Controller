@@ -9,7 +9,6 @@ from threading import Lock
 from itertools import chain
 from serial import Serial
 from serial.serialutil import SerialException
-from dataclasses import dataclass
 from typing import Literal, Optional, Any
 
 
@@ -213,12 +212,15 @@ class Motor:
         """
         PIDType = 'A' if stage == 'angle' else 'V'
 
-        success = True
         for char, arg in chain(zip(['P', 'I', 'D', 'R', 'L', 'F'], args), kwargs.items()):
-            success &= self._sendCommand(
-                f'M{PIDType}{char}{arg}', float) == arg if self.alive else False
+            if not (
+                self._sendCommand(
+                    f'M{PIDType}{char}{arg}', float
+                ) == arg if self.alive else False
+            ):
+                return False
 
-        return success
+        return True
 
     def setCurrentLimit(self, limit: float) -> bool:
         """
@@ -284,7 +286,12 @@ class Motor:
         bool
             Confirmation
         """
-        return self._sendCommand(f'M{mode}', str)[:3] == mode[:3] if self.alive else False
+        d = {
+            'torque': 0,
+            'velocity': 1,
+            'angle': 2,
+        }
+        return self._sendCommand(f'MC{d[mode]}', str)[:3] == mode[:3] if self.alive else False
 
     def move(self, pos: float) -> bool:
         """
