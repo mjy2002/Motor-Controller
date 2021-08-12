@@ -9,10 +9,10 @@ void printDRV8316Status();
 void printSensorStatus();
 
 // for human use or not
-#define HUMAN false
+#define HUMAN true
 
 // for use with multiple motors
-#define MOTOR_ID 4
+#define MOTOR_ID 0
 
 // pin definitions
 #define SENSOR_nCS 30
@@ -99,11 +99,7 @@ void setup()
   }
 
   motor.init();
-  // motor.initFOC();
-  // motor.initFOC(2.39, CW); // Motor 1
-  // motor.initFOC(0.06, CW); // Motor 2
-  // motor.initFOC(1.69, CW); // Motor 3
-  motor.initFOC(1.53, CW); // Motor 4
+  motor.initFOC(); // Change this for the motor you use
   motor.disable();
 
   command.add('M', onMotor);
